@@ -1,5 +1,14 @@
+### Python ###
+__pycache__/
+
 ### IntelliJ ###
 .idea/
 
 ### VS Code ###
 .vscode/
+
+### .venv ###
+.venv/
+
+### Secret ###
+secret.py
