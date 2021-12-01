@@ -1,0 +1,185 @@
+@charset "UTF-8";
+
+.u_likeit.only {
+    display: inline-block;
+    vertical-align: top;
+}
+.u_likeit_button {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    transition: transform 0.3s;
+}
+.u_likeit_button:active {
+    transform: scale(0.9);
+}
+.u_likeit_button .u_likeit_icons {
+    display: inline-block;
+    vertical-align: top;
+}
+.u_likeit_button .u_likeit_icons .u_likeit_icon {
+    display: inline-block;
+    vertical-align: top;
+}
+.u_likeit_button .u_likeit_blind {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+}
+.u_likeit_button .u_likeit_icons .u_likeit_icon::before {
+    display: block;
+    content: '';
+}
+.u_likeit_button.myplace_likeit_type1 .u_likeit_icons .u_likeit_icon.__reaction__like::before {
+    background-image: url(https://m.place.naver.com/my/static/media/images/icon_likeit_type1.svg);
+    background-size: 36px 36px;
+    -webkit-background-size: 36px 36px;
+    width: 36px;
+    height: 36px;
+}
+.u_likeit_button.myplace_likeit_type1.on .u_likeit_icon.__reaction__like::before {
+    background-image: url(https://m.place.naver.com/my/static/media/images/icon_likeit_type1_active.svg);
+}
+.u_likeit_button.myplace_likeit_type2 .u_likeit_icons .u_likeit_icon.__reaction__like::before {
+    background-image: url(https://m.place.naver.com/my/static/media/images/icon_likeit_type2.svg);
+    background-size: 27px 21px;
+    -webkit-background-size: 27px 21px;
+    width: 27px;
+    height: 21px;
+}
+.u_likeit_button.myplace_likeit_type2.on .u_likeit_icon.__reaction__like::before {
+    background-image: url(https://m.place.naver.com/my/static/media/images/icon_likeit_type2_active.svg);
+}
+.u_likeit_button.myplace_likeit_type2_20210122 {
+    text-align: center;
+}
+.u_likeit_button.myplace_likeit_type2_20210122 .u_likeit_icons .u_likeit_icon.__reaction__like::before {
+    background-image: url(https://m.place.naver.com/my/static/media/images/icon_likeit_type2_20210122.svg);
+    background-size: 25px 20px;
+    -webkit-background-size: 25px 20px;
+    width: 25px;
+    height: 20px;
+}
+.u_likeit_button.myplace_likeit_type2_20210122.on .u_likeit_icon.__reaction__like::before {
+    background-image: url(https://m.place.naver.com/my/static/media/images/icon_likeit_type2_active_20210122.svg);
+}
+.u_likeit_button.myplace_likeit_type2_20210122 .myplace_label_like {
+    display: block;
+    margin-top: 4px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #9a9a9a;
+    letter-spacing: -0.3px;
+    line-height: 1.2rem;
+}
+.u_likeit_button.myplace_likeit_type3 .u_likeit_icons .u_likeit_icon.__reaction__like:before {
+    background-image: url(https://m.place.naver.com/my/static/media/images/icon_likeit_type3.svg);
+    background-size: 24px 21px;
+    -webkit-background-size: 24px 21px;
+    width: 24px;
+    height: 21px;
+}
+.u_likeit_button.myplace_likeit_type3.on .u_likeit_icon.__reaction__like:before {
+    background-image: url(https://m.place.naver.com/my/static/media/images/icon_likeit_type3_active.svg);
+}
+.u_likeit_button.myplace_likeit_review_write {
+    height: 55px;
+    padding: 18px 39px 19px 30px;
+    border-radius: 12px;
+    background: #fff;
+    box-sizing: border-box;
+}
+.u_likeit_button.myplace_likeit_review_write .u_likeit_icons {
+    margin: -1px 14px 0 0;
+}
+.u_likeit_button.myplace_likeit_review_write .myplace_icon_txt {
+    fill: #d1d4d8;
+    width: 116px;
+    height: 18px;
+}
+.u_likeit_button.myplace_likeit_review_write .myplace_icon_particle {
+    opacity: 0;
+    position: absolute;
+}
+.u_likeit_button.myplace_likeit_review_write .myplace_icon_particle.type1 {
+    top: 12px;
+    left: 26px;
+    width: 37px;
+    height: 32px;
+}
+.u_likeit_button.myplace_likeit_review_write .myplace_icon_particle.type2 {
+    top: 10px;
+    left: 22px;
+    width: 39px;
+    height: 18px;
+}
+
+.u_likeit_button.myplace_likeit_review_write .myplace_icon_particle.type3 {
+    top: 9px;
+    left: 36px;
+    width: 17px;
+    height: 37px;
+}
+
+.u_likeit_button.myplace_likeit_review_write.on {
+    background-image: linear-gradient(257deg, #6e4cde, #4546ce);
+    color: #fff;
+}
+
+.u_likeit_button.myplace_likeit_review_write.on .myplace_icon_txt {
+    fill: #fff;
+}
+
+.u_likeit_button.myplace_likeit_review_write.on .myplace_icon_particle {
+    animation: particle_ani 0.5s cubic-bezier(0.22, 0.61, 0.36, 1) 2 alternate;
+}
+
+.u_likeit_button.myplace_likeit_review_write.on .myplace_icon_particle.type2 {
+    animation-delay: 0.2s;
+}
+
+.u_likeit_button.myplace_likeit_review_write.on .myplace_icon_particle.type3 {
+    animation-delay: 0.4s;
+}
+
+@keyframes particle_ani {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+.u_likeit_button.myplace_likeit_bookmark_folder {
+    width: 62px;
+    height: 62px;
+    padding: 10px 15px 12px 14px;
+    border: 1px solid #dbdfe3;
+    border-radius: 19px;
+    background: #fff;
+    box-shadow: 0 6px 16px 0 rgba(135, 135, 135, 0.06);
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.u_likeit_button.myplace_likeit_bookmark_folder .myplace_icon_txt {
+    fill: #abaeb2;
+    width: 32px;
+    height: 11px;
+    margin-top: 6px;
+}
+
+.u_likeit_button.myplace_likeit_bookmark_folder.on .myplace_icon_txt {
+    fill: #242424;
+}
+
+.u_likeit_button.myplace_likeit_review_photo_card {
+    padding: 7px 10px 10px 10px;
+}
