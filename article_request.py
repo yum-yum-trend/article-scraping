@@ -18,10 +18,7 @@ def find_files(dir_name):
 
 
 def get_data():
-
     for file in files:
-
-        cnt = 0
 
         with open(file, 'r') as f:
             article_data = json.load(f)  # json_data = dict
@@ -67,16 +64,12 @@ def get_data():
             }
 
             header = {
-                "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJOYXllb25Ld29uIiwiZXhwIjoxNjM4Mzc5NjY4LCJpYXQiOjE2MzgzNjE2Njh9.2cWiLjFltgMAO6knV72Sp6nL_x5TQz1xkLWbipKMB0fnckoKH0bzmbocvC7fvKE95o8kFPSpTLHHRCNgOmk16w"
+                "Authorization": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJOYXllb25Ld29uIiwiZXhwIjoxNjM4Mzk3ODY1LCJpYXQiOjE2MzgzNzk4NjV9.-v_PMcRXc1iaUHESHFnOLGgfOS3wws991HrKhwIYCST81HbKFKqtKqQMm4rvx4W0RZAjeXhvFdid5rdABgsl9Q"
             }
 
             response = requests.post('http://localhost:8080/articles', headers=header, files=image_files, data=payload)
 
             time.sleep(3)
-
-            if cnt == 10: break
-
-        if cnt == 10: break
 
 
 find_files('json_data')
